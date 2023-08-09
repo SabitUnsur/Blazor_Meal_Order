@@ -1,0 +1,37 @@
+﻿@page "/buttontest"
+@page "/buttons"
+@*routing*@
+
+<h3>ButtonTest</h3>
+
+<div class="form-group">
+
+    <div class="container">
+
+        <div class="btn-toolbar">
+
+            <CustomEditButtonComponent OnClick="changeTitle" />
+
+            <CustomEditButtonComponent Caption="Edit Caption" Color="danger" Icon="pencil" IsSmall="false" />
+
+
+            <AddNewButtonComponent />
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+@code {
+    private String title = "";
+
+    private void  changeTitle()
+    {
+        title = "New Title";
+    }
+}
