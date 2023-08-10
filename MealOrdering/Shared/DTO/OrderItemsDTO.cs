@@ -13,8 +13,7 @@ namespace MealOrdering.Shared.DTO
         public Guid CreatedUserId { get; set; }
         public Guid OrderId { get; set; }
         public String Description { get; set; }
-
-        public string CreatedUserFullName { get; set; }
+        public String CreatedUserFullName { get; set; }
         public String OrderName { get; set; }
 
     }

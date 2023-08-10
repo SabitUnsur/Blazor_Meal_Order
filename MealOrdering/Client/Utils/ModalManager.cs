@@ -20,6 +20,7 @@ namespace MealOrdering.Client.Utils
             modalParameters.Add("Message", Message);
 
             var modalRef= modalService.Show<ShowMessagePopupComponent>(Title,modalParameters);
+            //ShowMessagePopupComponent içerisinde giden parametreler setlendi
 
             if (duration > 0)
             {
@@ -39,7 +40,6 @@ namespace MealOrdering.Client.Utils
             return !modalResult.Cancelled;
 
         }
-
 
     }
 }
