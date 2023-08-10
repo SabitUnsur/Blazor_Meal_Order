@@ -94,6 +94,27 @@ using MealOrdering.Client.CustomComponents.Buttons;
 #line hidden
 #nullable disable
 #nullable restore
+#line 13 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.CustomComponents.ModalComponents;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\FetchData.razor"
 using MealOrdering.Shared;
 

@@ -63,3 +63,14 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\obj\Debug\net5.0\re
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\obj\Debug\net5.0\MealOrdering.Server.pdb
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\obj\Debug\net5.0\MealOrdering.Server.genruntimeconfig.cache
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\obj\Debug\net5.0\ref\MealOrdering.Server.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Blazored.Modal.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Npgsql.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.pdb

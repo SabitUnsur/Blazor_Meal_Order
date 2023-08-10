@@ -1,8 +1,20 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-+qAZ7MdRnhct8ECH\/Dp0O0IRWQ2hq+ZPPbvjR+b49sk=",
+      "hash": "sha256-hCgyKYB2Fp3cS2OYfOsDmtYLbOA\/5\/0gZ\/fo0fXNVuo=",
+      "url": "_content\/Blazored.Modal\/blazored-modal.css"
+    },
+    {
+      "hash": "sha256-Ecu8rYbiN76vhfIqWT4tzjwbb0xrvEokQNxvlLVzqdw=",
+      "url": "_content\/Blazored.Modal\/blazored.modal.js"
+    },
+    {
+      "hash": "sha256-ML69dV9GXKJVMFmPaZfMvUXXVN01at17Ml9Gsr9MN7c=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-v5hsrRFpgCTdRU0txjAJ2ZBWWsLEp0HGPd9rGOxEB7w=",
+      "url": "_framework\/Blazored.Modal.dll"
     },
     {
       "hash": "sha256-5QpvlVP++Gkc1dR8QwljPr2My0TdN\/zMkNik9vPVNxk=",
@@ -793,16 +805,20 @@
       "url": "_framework\/MealOrdering.Shared.pdb"
     },
     {
-      "hash": "sha256-afwTsbjCvUu9kqbsBI0W7Yqj6Ms9epcKUClNojJyuGk=",
+      "hash": "sha256-DcGtsq1vazXGyHORGAc8lo4pTNdeSiVzfu4oJZ13\/mI=",
       "url": "_framework\/MealOrdering.Client.dll"
     },
     {
-      "hash": "sha256-mA6KNSox9OeiMajUr\/KyxqI4viBE9J1rb7K3z4dsfPc=",
+      "hash": "sha256-yKbf7l6ojjelrVV79t4ZEwq6ECMRZygyVZYDZAD7qkk=",
       "url": "_framework\/MealOrdering.Client.pdb"
     },
     {
       "hash": "sha256-dl8FVRvWOJfOtzIC\/x66QNnBNsT9cAOMrn22GB8fJ8U=",
       "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-dhsBiCpM50jz0q4WgtNB\/EqimDQJiOinfKPUHu7mlEw=",
+      "url": "_framework\/Blazored.Modal.dll.gz"
     },
     {
       "hash": "sha256-nSgLc6M3PQKz+V4X4nxkgZHiXipLtGFa8oKbUMnCr64=",
@@ -1645,7 +1661,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-SXdQjR3NrldGy+LDGtqFn9BcyyrDtM4k2jwL2yf0jRo=",
+      "hash": "sha256-i\/4M5P4s542CpW67vYkCKGAUdhS6wrzDKhsaMsUrSMg=",
       "url": "index.html"
     },
     {
@@ -1657,5 +1673,5 @@
       "url": "MealOrdering.Client.bundle.scp.css"
     }
   ],
-  "version": "XAbwQfEu"
+  "version": "SlZW0LwT"
 };

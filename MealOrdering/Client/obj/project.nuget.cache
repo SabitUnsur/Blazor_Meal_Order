@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i+XQOn8hEUS4pGDDwIEbffkgr1XwD1zt1pe0cSO9OEeuDVeov05UNaxLT0Nn0UWgNSkC1zVdjVOaUNky5Zk+lQ==",
+  "dgSpecHash": "poydSp6W98/kGroZPse8Ls/bhIYbVcvmSVlPlvouo87Td30DKUrKusaeBmYEL2Nx9AzKEx/qfDUlvS1r5w61Eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\MealOrdering.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sabit\\.nuget\\packages\\blazored.modal\\5.1.0\\blazored.modal.5.1.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.17\\microsoft.aspnetcore.authorization.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.17\\microsoft.aspnetcore.components.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.17\\microsoft.aspnetcore.components.analyzers.5.0.17.nupkg.sha512",

@@ -1,0 +1,15 @@
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\bin\Debug\net5.0\MealOrdering.Server.Data.deps.json
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\bin\Debug\net5.0\MealOrdering.Server.Data.runtimeconfig.json
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\bin\Debug\net5.0\MealOrdering.Server.Data.runtimeconfig.dev.json
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\bin\Debug\net5.0\MealOrdering.Server.Data.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\bin\Debug\net5.0\MealOrdering.Server.Data.pdb
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.csproj.AssemblyReference.cache
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.AssemblyInfoInputs.cache
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.AssemblyInfo.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.csproj.CoreCompileInputs.cache
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\refint\MealOrdering.Server.Data.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.pdb
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\MealOrdering.Server.Data.genruntimeconfig.cache
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering.Server.Data\obj\Debug\net5.0\ref\MealOrdering.Server.Data.dll

@@ -96,6 +96,34 @@ using MealOrdering.Client.CustomComponents.Buttons;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.CustomComponents.ModalComponents;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
+using MealOrdering.Client.Utils;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/buttontest")]
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/buttons")]
     public partial class ButtonTest : global::Microsoft.AspNetCore.Components.ComponentBase
@@ -106,14 +134,36 @@ using MealOrdering.Client.CustomComponents.Buttons;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
+#line 31 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
        
+
+    [CascadingParameter]
+    public IModalService Modal { get; set; }
+
+    [Inject]
+    ModalManager ModalManager { get; set; }
+
+
     private String title = "";
 
-    private void  changeTitle()
+    private async Task changeTitle()
     {
-        title = "New Title";
+
+        await ModalManager.ShowMessageAsync("Show Message", "Kayıt Silindi",3000);
     }
+
+    private async Task showConfirmation()
+    {
+
+        var res=await ModalManager.ConfirmationAsync("Confirmations", "Are you sure that it will be deleted?");
+
+        if (res) title = "Yes just clicked"; else title = "No just clicked";
+
+    }
+
+
+
+
 
 #line default
 #line hidden

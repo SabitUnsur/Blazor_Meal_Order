@@ -1,8 +1,11 @@
 ﻿@page "/buttontest"
 @page "/buttons"
+@using MealOrdering.Client.Utils;
 @*routing*@
 
-<h3>ButtonTest</h3>
+
+
+<h3>@title</h3>
 
 <div class="form-group">
 
@@ -10,13 +13,11 @@
 
         <div class="btn-toolbar">
 
-            <CustomEditButtonComponent OnClick="changeTitle" />
+            <CustomEditButtonComponent Caption="ShowMessage" OnClick="@changeTitle" />
 
-            <CustomEditButtonComponent Caption="Edit Caption" Color="danger" Icon="pencil" IsSmall="false" />
-
+            <CustomEditButtonComponent Caption="Edit Caption" OnClick="@showConfirmation" Color="danger" Icon="pencil" IsSmall="false" />
 
             <AddNewButtonComponent />
-
 
 
         </div>
@@ -28,10 +29,32 @@
 
 
 @code {
+
+    [CascadingParameter]
+    public IModalService Modal { get; set; }
+
+    [Inject]
+    ModalManager ModalManager { get; set; }
+
+
     private String title = "";
 
-    private void  changeTitle()
+    private async Task changeTitle()
     {
-        title = "New Title";
+
+        await ModalManager.ShowMessageAsync("Show Message", "Kayıt Silindi",3000);
     }
+
+    private async Task showConfirmation()
+    {
+
+        var res=await ModalManager.ConfirmationAsync("Confirmations", "Are you sure that it will be deleted?");
+
+        if (res) title = "Yes just clicked"; else title = "No just clicked";
+
+    }
+
+
+
+
 }

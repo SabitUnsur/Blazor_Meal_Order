@@ -653,3 +653,12 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Ra
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\ButtonComponent.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\Buttons\AddNewButtonComponent.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\AddNewButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.Modal.dll.gz
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.Modal.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\build-gz\3ebOXjZ7.gz
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\ModalComponents\BaseModalComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\ModalComponents\ConfirmationPopupComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\ModalComponents\ShowMessagePopupComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\ModalComponents\BaseModalComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\ModalComponents\ConfirmationPopupComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\ModalComponents\ShowMessagePopupComponent.razor.g.cs

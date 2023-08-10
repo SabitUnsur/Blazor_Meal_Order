@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Blazored.Modal;
 
 namespace MealOrdering.Server
 {
@@ -24,6 +25,7 @@ namespace MealOrdering.Server
         {
 
             services.AddControllersWithViews();
+            services.AddBlazoredModal();
             services.AddRazorPages();
         }
 
