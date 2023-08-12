@@ -117,6 +117,13 @@ using MealOrdering.Client.CustomComponents.ModalComponents;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Pages.PageProcess;
+
+#line default
+#line hidden
+#nullable disable
     public partial class CustomEditButtonComponent : BaseButtonComponent
     {
         #pragma warning disable 1998

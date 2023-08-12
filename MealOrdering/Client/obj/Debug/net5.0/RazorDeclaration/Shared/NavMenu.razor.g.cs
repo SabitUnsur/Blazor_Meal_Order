@@ -117,6 +117,13 @@ using MealOrdering.Client.CustomComponents.ModalComponents;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Pages.PageProcess;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -125,7 +132,7 @@ using MealOrdering.Client.CustomComponents.ModalComponents;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Shared\NavMenu.razor"
+#line 35 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

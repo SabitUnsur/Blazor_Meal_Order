@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace MealOrdering.Client.Pages
+namespace MealOrdering.Client.Pages.Users
 {
     #line hidden
     using System;
@@ -124,8 +124,8 @@ using MealOrdering.Client.Pages.PageProcess;
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/userlist")]
+    public partial class UserList : UserListProcess
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

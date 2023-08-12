@@ -115,6 +115,13 @@ using MealOrdering.Client.CustomComponents.ModalComponents;
 #line hidden
 #nullable disable
 #nullable restore
+#line 16 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Pages.PageProcess;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
 using MealOrdering.Client.Utils;
 

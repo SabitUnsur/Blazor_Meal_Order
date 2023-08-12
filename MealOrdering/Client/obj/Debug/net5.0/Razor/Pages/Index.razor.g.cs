@@ -114,6 +114,13 @@ using MealOrdering.Client.CustomComponents.ModalComponents;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Pages.PageProcess;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
     {
