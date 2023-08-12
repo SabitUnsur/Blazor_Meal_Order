@@ -75,3 +75,11 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Np
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.dll
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.pdb
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

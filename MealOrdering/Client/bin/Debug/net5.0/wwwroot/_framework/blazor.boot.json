@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-zMI\/dXK7DoZZ9Qm9U9\/jRN4iQ9Ss3w8\/rwQQxC6SW9Y=",
       "netstandard.dll": "sha256-W3q3PN+lpRB+tRJEIhtMgYOGFv0pauEeeCS9iIRkKAM=",
       "System.Private.CoreLib.dll": "sha256-9rUJv1mXEQdGt\/kWiJ1ITPPzp3cAi3lSmqHVTisp7w0=",
-      "MealOrdering.Shared.dll": "sha256-CDaVZOSlOJopIlCBYTy3LLiqlzUhKUDpusljwiEC1c4=",
-      "MealOrdering.Client.dll": "sha256-JRPNNzNlZt+bADLzhQHy\/iYLA4arBzAmiBN4B2IxQnQ="
+      "MealOrdering.Shared.dll": "sha256-xO9FS0t27JIv9TXcRzUgoGVvS2\/AbV1nXOaNCMBCFBA=",
+      "MealOrdering.Client.dll": "sha256-bBBRUohEbprtiXyV1K0vZX6TPVk\/tNb80g9w6xCfcrA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MealOrdering.Shared.pdb": "sha256-63QzzWFUWXFcTalaHO+Nhc5lKi6k4EgRf8z+2u\/MxnI=",
-      "MealOrdering.Client.pdb": "sha256-8tLa3yDkYcNJlYcUE1LPcTJ7muk6S9gy0bn7R9J8BPE="
+      "MealOrdering.Shared.pdb": "sha256-DUm7ju3p0DEeuCOewX9uh1BLRzdxRCvQuPnwKS+frbo=",
+      "MealOrdering.Client.pdb": "sha256-IbwPbGcXFxbVcUouGkMUGA3K8SGXBLLDQiXk+Y2LqKo="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-8oJip361m8OrfLRJOuIeswWKaoxtT27\/wINCxhn+s4c=",

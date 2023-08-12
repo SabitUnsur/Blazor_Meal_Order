@@ -5,9 +5,15 @@ using MealOrdering.Server.Data.Models;
 using MealOrdering.Server.Services.Infrastructure;
 using MealOrdering.Shared.DTO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace MealOrdering.Server.Services.Services
@@ -16,11 +22,13 @@ namespace MealOrdering.Server.Services.Services
     {
         private readonly IMapper mapper;
         private readonly MealOrderingDbContext context;
+        private readonly IConfiguration configuration;
 
-        public UserService(IMapper _mapper,MealOrderingDbContext _Context)
+        public UserService(IMapper _mapper, MealOrderingDbContext _Context, IConfiguration _configuration)
         {
             mapper = _mapper;
             context = _Context;
+            configuration = _configuration;
         }
 
         public async Task<UserDTO> CreateUser(UserDTO userDTO)
@@ -64,6 +72,26 @@ namespace MealOrdering.Server.Services.Services
             return await context.Users.Where(x => x.IsActive)
               .ProjectTo<UserDTO>(mapper.ConfigurationProvider) //SQL içerisinden sadece UserDTO ile ilgili alanları çekecek
               .ToListAsync();
+        }
+
+        public string Login(string email, string password)
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSecurityKey"]));
+            var credential = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
+            var expireDate = DateTime.Now.AddDays(int.Parse(configuration["JwtExpiryInDays"].ToString()));
+
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.Email,email)
+            };
+
+            var token = new JwtSecurityToken(configuration["JwtIssuer"], configuration["JwtAudience"]
+                , claims, null, expireDate, credential);
+
+            string tokenStr = new JwtSecurityTokenHandler().WriteToken(token);
+
+            return tokenStr;
+
         }
 
         public async Task<UserDTO> UpdateUser(UserDTO userDTO)

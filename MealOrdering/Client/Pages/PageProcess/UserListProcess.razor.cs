@@ -11,6 +11,7 @@ namespace MealOrdering.Client.Pages.PageProcess
     //Razor sayfasında code bölümünü buraya tasidik.
     public class UserListProcess:ComponentBase
     {
+    
         [Inject]
         public HttpClient Client { get; set; }
 
