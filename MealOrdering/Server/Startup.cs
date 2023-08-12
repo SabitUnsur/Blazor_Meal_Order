@@ -8,6 +8,10 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using Blazored.Modal;
 using MealOrdering.Server.Services.Extensions;
+using MealOrdering.Server.Services.Infrastructure;
+using MealOrdering.Server.Services.Services;
+using MealOrdering.Server.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace MealOrdering.Server
 {
@@ -28,6 +32,12 @@ namespace MealOrdering.Server
             services.AddBlazoredModal();
             services.AddRazorPages();
             services.ConfigureMapping();
+            services.AddScoped<IUserService, UserService>();
+            services.AddDbContext<MealOrderingDbContext>(config =>
+            {
+                config.UseNpgsql("User ID=postgres;password=123;Host=localhost;Port=5432;Database=MealOrdering;SearchPath=public");
+                config.EnableSensitiveDataLogging();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

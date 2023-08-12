@@ -74,3 +74,4 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Np
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.dll
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\MealOrdering.Server.Data.pdb
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\AutoMapper.dll

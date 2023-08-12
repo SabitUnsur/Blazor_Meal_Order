@@ -134,7 +134,7 @@ using MealOrdering.Client.Utils;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
+#line 32 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
        
 
     [CascadingParameter]
