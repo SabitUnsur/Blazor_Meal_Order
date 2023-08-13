@@ -12,7 +12,7 @@ namespace MealOrdering.Server.Services.Infrastructure
         public Task<UserDTO> CreateUser(UserDTO userDTO);
         public Task<UserDTO> UpdateUser(UserDTO userDTO);
         public Task<bool> DeleteUser(Guid Id);
-        public String Login(string email, string password);
+        public Task<UserLoginResponseDTO> Login(string email, string password);
 
     }
 }

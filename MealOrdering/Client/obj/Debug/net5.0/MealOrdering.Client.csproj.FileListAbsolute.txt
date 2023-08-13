@@ -664,3 +664,10 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Ra
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\ModalComponents\ShowMessagePopupComponent.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Users\UserList.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\Pages\Users\UserList.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\Shared\EmptyLayout.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\Pages\Login.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\Shared\EmptyLayout.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\build-gz\oSriQpDF.gz

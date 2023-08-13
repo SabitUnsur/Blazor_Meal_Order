@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MealOrdering.Server.Data.Models;
 using MealOrdering.Shared.DTO;
+using MealOrdering.Shared.Utils;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MealOrdering.Server.Services.Extensions
@@ -32,9 +33,9 @@ namespace MealOrdering.Server.Services.Extensions
 
                 CreateMap<Users, UserDTO>();
 
-                /*CreateMap<UserDTO, Users>()
-                    .ForMember(x => x.Password, y => y.MapFrom(z => PasswordEncrypter.Encrypt(z.Password)))
-                    ;*/
+                CreateMap<UserDTO, Users>()
+                    .ForMember(x => x.Password, y => y.MapFrom(z => PasswordEncryptor.Encrypt(z.Password)))
+                    ;
 
                 CreateMap<Orders, OrderDTO>()
                     .ForMember(x => x.SupplierName, y => y.MapFrom(z => z.Supplier.Name))

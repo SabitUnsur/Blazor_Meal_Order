@@ -121,6 +121,27 @@ using MealOrdering.Client.Pages.PageProcess;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 17 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Utils;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.ResponseModels;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

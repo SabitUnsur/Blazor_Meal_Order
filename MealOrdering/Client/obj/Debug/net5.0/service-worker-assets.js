@@ -9,8 +9,12 @@
       "url": "_content\/Blazored.Modal\/blazored.modal.js"
     },
     {
-      "hash": "sha256-2cltWJ64fXZrDTQStJukcFqqxJ7oQEYUkprr94PP0mE=",
+      "hash": "sha256-3VpeZcXBeBRSkCX4TCn1G9vujVkZEZZnrbbAZH3WEQ0=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-7+FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=",
+      "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
       "hash": "sha256-v5hsrRFpgCTdRU0txjAJ2ZBWWsLEp0HGPd9rGOxEB7w=",
@@ -797,24 +801,28 @@
       "url": "_framework\/dotnet.5.0.17.js"
     },
     {
-      "hash": "sha256-xO9FS0t27JIv9TXcRzUgoGVvS2\/AbV1nXOaNCMBCFBA=",
+      "hash": "sha256-nJI4xXMjG9cUwLgvfq1Jc5U58H0Szae+lFaX804ybgA=",
       "url": "_framework\/MealOrdering.Shared.dll"
     },
     {
-      "hash": "sha256-DUm7ju3p0DEeuCOewX9uh1BLRzdxRCvQuPnwKS+frbo=",
+      "hash": "sha256-vqPHpHnxlZpkqxX7O2BGKwK98QxBs5WyQOnQRPvdV6c=",
       "url": "_framework\/MealOrdering.Shared.pdb"
     },
     {
-      "hash": "sha256-bBBRUohEbprtiXyV1K0vZX6TPVk\/tNb80g9w6xCfcrA=",
+      "hash": "sha256-w9ONXcuiCNtd2ppaTLl4GO6vEYnhafpYSj\/Wnow6oPw=",
       "url": "_framework\/MealOrdering.Client.dll"
     },
     {
-      "hash": "sha256-IbwPbGcXFxbVcUouGkMUGA3K8SGXBLLDQiXk+Y2LqKo=",
+      "hash": "sha256-zLgHj0LgDoDabCzwOOzPP\/QzOEVC6gPxaVEurXn\/zCU=",
       "url": "_framework\/MealOrdering.Client.pdb"
     },
     {
       "hash": "sha256-dl8FVRvWOJfOtzIC\/x66QNnBNsT9cAOMrn22GB8fJ8U=",
       "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-clqjpvowa3WBnhhcB8Ulkhr0qIsS9xjjLCYAQHgnesM=",
+      "url": "_framework\/Blazored.LocalStorage.dll.gz"
     },
     {
       "hash": "sha256-dhsBiCpM50jz0q4WgtNB\/EqimDQJiOinfKPUHu7mlEw=",
@@ -1601,7 +1609,7 @@
       "url": "_framework\/dotnet.5.0.17.js.gz"
     },
     {
-      "hash": "sha256-vNd44rhtDn0XqRUR6FKXFmXP4BGrA8Gg8G3gmizDD20=",
+      "hash": "sha256-Eps2q1wenn3IM1UcTqKN8GLHOwGfHGlG1+suqLhs6AU=",
       "url": "_framework\/MealOrdering.Shared.dll.gz"
     },
     {
@@ -1673,5 +1681,5 @@
       "url": "MealOrdering.Client.bundle.scp.css"
     }
   ],
-  "version": "sW6aOv7i"
+  "version": "AYGl3iXq"
 };

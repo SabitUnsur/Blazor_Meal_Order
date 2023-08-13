@@ -124,6 +124,27 @@ using MealOrdering.Client.Pages.PageProcess;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 17 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Utils;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.ResponseModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -133,18 +154,21 @@ using MealOrdering.Client.Pages.PageProcess;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\Counter.razor"
+#line 12 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\Counter.razor"
        
     private int currentCount = 0;
 
-    private void IncrementCount()
+    private async Task IncrementCount()
     {
         currentCount++;
+
+      await  localStorage.SetItemAsync("counter", currentCount);
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
     }
 }
 #pragma warning restore 1591

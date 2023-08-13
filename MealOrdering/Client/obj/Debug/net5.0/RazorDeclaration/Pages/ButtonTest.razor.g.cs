@@ -125,6 +125,20 @@ using MealOrdering.Client.Pages.PageProcess;
 #line hidden
 #nullable disable
 #nullable restore
+#line 17 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.ResponseModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\ButtonTest.razor"
 using MealOrdering.Client.Utils;
 

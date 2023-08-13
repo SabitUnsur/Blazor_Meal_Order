@@ -124,6 +124,27 @@ using MealOrdering.Client.Pages.PageProcess;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 17 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Client.Utils;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using MealOrdering.Shared.ResponseModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -132,6 +153,20 @@ using MealOrdering.Client.Pages.PageProcess;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 11 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\Index.razor"
+      
+    private int counter = 0;
+
+    protected async override Task OnInitializedAsync()
+    {
+       counter = await localStorage.GetItemAsync<int>("counter");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
     }
 }
 #pragma warning restore 1591

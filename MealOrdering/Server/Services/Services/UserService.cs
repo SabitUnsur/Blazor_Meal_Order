@@ -4,6 +4,7 @@ using MealOrdering.Server.Data.Context;
 using MealOrdering.Server.Data.Models;
 using MealOrdering.Server.Services.Infrastructure;
 using MealOrdering.Shared.DTO;
+using MealOrdering.Shared.Utils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -74,8 +75,20 @@ namespace MealOrdering.Server.Services.Services
               .ToListAsync();
         }
 
-        public string Login(string email, string password)
+        public async Task<UserLoginResponseDTO> Login(string email, string password)
         {
+            var encryptedPassword = PasswordEncryptor.Encrypt(password);
+
+            var dbUser = await context.Users.FirstOrDefaultAsync(i => i.EMailAddress == email && i.Password == encryptedPassword);
+
+            if (dbUser == null)
+                throw new Exception("User not found or given information is wrong");
+
+            if (!dbUser.IsActive)
+                throw new Exception("User state is Passive!");
+
+            UserLoginResponseDTO userLoginResponse = new();
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSecurityKey"]));
             var credential = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
             var expireDate = DateTime.Now.AddDays(int.Parse(configuration["JwtExpiryInDays"].ToString()));
@@ -88,9 +101,10 @@ namespace MealOrdering.Server.Services.Services
             var token = new JwtSecurityToken(configuration["JwtIssuer"], configuration["JwtAudience"]
                 , claims, null, expireDate, credential);
 
-            string tokenStr = new JwtSecurityTokenHandler().WriteToken(token);
+            userLoginResponse.ApiToken = new JwtSecurityTokenHandler().WriteToken(token);
+            userLoginResponse.User = mapper.Map<UserDTO>(dbUser);
 
-            return tokenStr;
+            return userLoginResponse;
 
         }
 

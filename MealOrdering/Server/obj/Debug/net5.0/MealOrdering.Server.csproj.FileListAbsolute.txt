@@ -83,3 +83,4 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Mi
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Server\bin\Debug\net5.0\Blazored.LocalStorage.dll

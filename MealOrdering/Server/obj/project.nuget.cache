@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aHE194aC9jOpET+73klOsV8V7QFc0lsvgk0yfUEMcw008Vo8mo7h0AmfekRqGhiHPsda7xsupFflymZoVrIRGg==",
+  "dgSpecHash": "iSm5ZLN3NUmkC7LurgvublKzk26EQ66UucEyt/LY25/mmNWHPWW37i5QqvnPoZvpWKGy3dwdx/wknBLaVKlZQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Server\\MealOrdering.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sabit\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\blazored.modal\\5.1.0\\blazored.modal.5.1.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.1\\microsoft.aspnetcore.authentication.jwtbearer.3.1.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.17\\microsoft.aspnetcore.authorization.5.0.17.nupkg.sha512",
