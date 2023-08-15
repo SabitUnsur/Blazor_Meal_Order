@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
 using MealOrdering.Server.Services.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MealOrdering.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SupplierController : ControllerBase
     {
         private readonly ISupplierService supplierService;

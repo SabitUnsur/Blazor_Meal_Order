@@ -145,6 +145,20 @@ using MealOrdering.Shared.ResponseModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 20 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     public partial class EmptyLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

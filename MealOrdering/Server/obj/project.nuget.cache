@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iSm5ZLN3NUmkC7LurgvublKzk26EQ66UucEyt/LY25/mmNWHPWW37i5QqvnPoZvpWKGy3dwdx/wknBLaVKlZQQ==",
+  "dgSpecHash": "Du8SImDUAWoG/YO3+M3LwI5MXxba19LE6eNN526gR9EAA7adEu+OKRJQjeYfGl2ONO8PsVnIHLSZ6Xe7lPPRPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Server\\MealOrdering.Server.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.17\\microsoft.aspnetcore.authorization.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.17\\microsoft.aspnetcore.components.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.17\\microsoft.aspnetcore.components.analyzers.5.0.17.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\3.1.1\\microsoft.aspnetcore.components.authorization.3.1.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\5.0.17\\microsoft.aspnetcore.components.forms.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.web\\5.0.17\\microsoft.aspnetcore.components.web.5.0.17.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\5.0.17\\microsoft.aspnetcore.components.webassembly.5.0.17.nupkg.sha512",

@@ -146,6 +146,20 @@ using MealOrdering.Shared.ResponseModels;
 #line hidden
 #nullable disable
 #nullable restore
+#line 20 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\FetchData.razor"
 using MealOrdering.Shared;
 

@@ -145,6 +145,20 @@ using MealOrdering.Shared.ResponseModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 20 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.LayoutAttribute(typeof(MealOrdering.Client.Shared.EmptyLayout))]
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : global::Microsoft.AspNetCore.Components.ComponentBase
@@ -155,7 +169,7 @@ using MealOrdering.Shared.ResponseModels;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\Login.razor"
+#line 33 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Pages\Login.razor"
        
 
     private UserLoginRequestDTO userLoginRequest = new();
@@ -169,19 +183,45 @@ using MealOrdering.Shared.ResponseModels;
     [Inject]
     NavigationManager NavigationManager { get; set; }
 
+    [Inject]
+    ILocalStorageService localStorageService { get; set; }
+
+    [Inject]
+    AuthenticationStateProvider authenticationStateProvider { get; set; }
+
+
     private async Task loginProcess()
     {
         var httpRequestResponse = await Client.PostAsJsonAsync("api/User/Login", userLoginRequest);
-        if (httpRequestResponse.IsSuccessStatusCode)
+        try
         {
-            var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
 
-            if(response.Success)
+
+            if (httpRequestResponse.IsSuccessStatusCode)
             {
-                NavigationManager.NavigateTo("/");
-            }
+                var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
 
-            else  await ModalManager.ShowMessageAsync("Login Error", response.Message);
+                if (response.Success)
+                {
+                    await localStorageService.SetItemAsync("token", response.Value.ApiToken);
+                    await localStorageService.SetItemAsync("email", response.Value.User.EMailAddress);
+
+                    //Bu bilgileri local storagede tuttuk ve authstateprovider sınıfında bunları okuyacağız 
+
+                    (authenticationStateProvider as AuthStateProvider).NotifyUserLogin(response.Value.User.EMailAddress);
+
+                    Client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue
+                                                                                    ("Bearer", response.Value.ApiToken);
+
+                    NavigationManager.NavigateTo("/");
+                }
+
+                else await ModalManager.ShowMessageAsync("Login Error", response.Message);
+            }
+        }
+        catch (Exception ex)
+        {
+            await ModalManager.ShowMessageAsync("Login Error", ex.Message);
         }
     }
 

@@ -48,7 +48,7 @@
           "Microsoft.AspNetCore.Authentication": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.OAuth": "5.0.0.0",
           "Microsoft.AspNetCore.Authorization.Policy": "5.0.0.0",
-          "Microsoft.AspNetCore.Components.Authorization": "5.0.0.0",
+          "Microsoft.AspNetCore.Components.Authorization.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Components.Server": "5.0.0.0",
           "Microsoft.AspNetCore.Connections.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.CookiePolicy": "5.0.0.0",
@@ -416,6 +416,12 @@
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/5.0.17": {},
+      "Microsoft.AspNetCore.Components.Authorization/3.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "5.0.17",
+          "Microsoft.AspNetCore.Components": "5.0.17"
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/5.0.17": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.17"
@@ -1248,6 +1254,7 @@
           "Blazored.LocalStorage": "3.0.0",
           "Blazored.Modal": "5.1.0",
           "MealOrdering.Shared": "1.0.0",
+          "Microsoft.AspNetCore.Components.Authorization": "3.1.1",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.17",
           "System.Net.Http.Json": "5.0.0"
         },
@@ -1321,7 +1328,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Components.Authorization/5.0.0.0": {
+      "Microsoft.AspNetCore.Components.Authorization.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.Authorization.dll": {}
         },
@@ -2986,6 +2993,13 @@
       "path": "microsoft.aspnetcore.components.analyzers/5.0.17",
       "hashPath": "microsoft.aspnetcore.components.analyzers.5.0.17.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Components.Authorization/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDVsyGzyN0eEnlTEjqKepN2AzB0djXm5fE9zs3bc2ag8H3N7d2xtCcyCQlqrzrZjCE7BV66Jorg2OX57Cj74WQ==",
+      "path": "microsoft.aspnetcore.components.authorization/3.1.1",
+      "hashPath": "microsoft.aspnetcore.components.authorization.3.1.1.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Components.Forms/5.0.17": {
       "type": "package",
       "serviceable": true,
@@ -3666,7 +3680,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Components.Authorization/5.0.0.0": {
+    "Microsoft.AspNetCore.Components.Authorization.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

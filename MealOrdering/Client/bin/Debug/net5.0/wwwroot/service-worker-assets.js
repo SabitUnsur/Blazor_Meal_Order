@@ -9,7 +9,7 @@
       "url": "_content\/Blazored.Modal\/blazored.modal.js"
     },
     {
-      "hash": "sha256-3VpeZcXBeBRSkCX4TCn1G9vujVkZEZZnrbbAZH3WEQ0=",
+      "hash": "sha256-gtZobeCk\/quI+jBJy9+UIu1L2jl7DHkouvNM1E27aeU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -27,6 +27,10 @@
     {
       "hash": "sha256-lIaWNwfsw4JmImsjOS8Y60om1ZDgL2CTkBB+RmJPCgk=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
+    },
+    {
+      "hash": "sha256-Ckluz+qX36eQhCwNbF1pZZm1LXY0nMck51DaUTXc30E=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "hash": "sha256-RA8PrAgd0Srd27z2Nw+t5X4AGrsOq2zTT9OuXAOuO1Q=",
@@ -809,11 +813,11 @@
       "url": "_framework\/MealOrdering.Shared.pdb"
     },
     {
-      "hash": "sha256-w9ONXcuiCNtd2ppaTLl4GO6vEYnhafpYSj\/Wnow6oPw=",
+      "hash": "sha256-N6j4cLXl2CY\/k\/uc2sOcwfbRi7rq\/IQLduo7\/UZAjZA=",
       "url": "_framework\/MealOrdering.Client.dll"
     },
     {
-      "hash": "sha256-zLgHj0LgDoDabCzwOOzPP\/QzOEVC6gPxaVEurXn\/zCU=",
+      "hash": "sha256-3+k2bd4kdvGVtrpdB04yO4I+ws9mqeJ58aUr2bT9KLk=",
       "url": "_framework\/MealOrdering.Client.pdb"
     },
     {
@@ -835,6 +839,10 @@
     {
       "hash": "sha256-SshQzQfA1s6Ul6+srWAOwWXSxGt36wNCnbx12AwMUiY=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll.gz"
+    },
+    {
+      "hash": "sha256-R0DnHBf\/t8bocDG1elYNIwh01FFMPqVIbMPa6Z\/osRs=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Authorization.dll.gz"
     },
     {
       "hash": "sha256-tHcNW0sQrST\/fcOktuNnILdIRFPY\/sJUKYo+FM51aN4=",
@@ -1681,5 +1689,5 @@
       "url": "MealOrdering.Client.bundle.scp.css"
     }
   ],
-  "version": "AYGl3iXq"
+  "version": "zmiZVD7f"
 };

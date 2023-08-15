@@ -43,19 +43,45 @@
     [Inject]
     NavigationManager NavigationManager { get; set; }
 
+    [Inject]
+    ILocalStorageService localStorageService { get; set; }
+
+    [Inject]
+    AuthenticationStateProvider authenticationStateProvider { get; set; }
+
+
     private async Task loginProcess()
     {
         var httpRequestResponse = await Client.PostAsJsonAsync("api/User/Login", userLoginRequest);
-        if (httpRequestResponse.IsSuccessStatusCode)
+        try
         {
-            var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
 
-            if(response.Success)
+
+            if (httpRequestResponse.IsSuccessStatusCode)
             {
-                NavigationManager.NavigateTo("/");
-            }
+                var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
 
-            else  await ModalManager.ShowMessageAsync("Login Error", response.Message);
+                if (response.Success)
+                {
+                    await localStorageService.SetItemAsync("token", response.Value.ApiToken);
+                    await localStorageService.SetItemAsync("email", response.Value.User.EMailAddress);
+
+                    //Bu bilgileri local storagede tuttuk ve authstateprovider sınıfında bunları okuyacağız 
+
+                    (authenticationStateProvider as AuthStateProvider).NotifyUserLogin(response.Value.User.EMailAddress);
+
+                    Client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue
+                                                                                    ("Bearer", response.Value.ApiToken);
+
+                    NavigationManager.NavigateTo("/");
+                }
+
+                else await ModalManager.ShowMessageAsync("Login Error", response.Message);
+            }
+        }
+        catch (Exception ex)
+        {
+            await ModalManager.ShowMessageAsync("Login Error", ex.Message);
         }
     }
 

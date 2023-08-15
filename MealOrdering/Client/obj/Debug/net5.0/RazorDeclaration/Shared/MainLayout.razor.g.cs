@@ -145,6 +145,20 @@ using MealOrdering.Shared.ResponseModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 20 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -152,6 +166,40 @@ using MealOrdering.Shared.ResponseModels;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 20 "C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\Shared\MainLayout.razor"
+      
+
+    [CascadingParameter]
+    public Task<AuthenticationState> authenticationState { get; set; }
+
+    [Inject]
+    ILocalStorageService localStorageService { get; set; }
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    private string loginStr = "About";
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            loginStr = await localStorageService.GetItemAsStringAsync("email");
+        }
+
+        else
+        {
+            navigationManager.NavigateTo("/login");
+        }
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

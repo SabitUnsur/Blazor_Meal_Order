@@ -1,7 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
 
-
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -9,7 +8,7 @@
 
     <div class="main">
         <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">@loginStr</a>
         </div>
 
         <div class="content px-4">
@@ -17,3 +16,33 @@
         </div>
     </div>
 </div>
+
+@code{
+
+    [CascadingParameter]
+    public Task<AuthenticationState> authenticationState { get; set; }
+
+    [Inject]
+    ILocalStorageService localStorageService { get; set; }
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    private string loginStr = "About";
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            loginStr = await localStorageService.GetItemAsStringAsync("email");
+        }
+
+        else
+        {
+            navigationManager.NavigateTo("/login");
+        }
+    }
+
+}
