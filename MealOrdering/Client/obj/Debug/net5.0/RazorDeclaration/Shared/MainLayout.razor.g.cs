@@ -179,7 +179,7 @@ using Microsoft.AspNetCore.Components.Authorization;
     [Inject]
     NavigationManager navigationManager { get; set; }
 
-    private string loginStr = "About";
+    private string loginStr = "";
 
     protected async override Task OnInitializedAsync()
     {

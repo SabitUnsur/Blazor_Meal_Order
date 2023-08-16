@@ -35,6 +35,7 @@ namespace MealOrdering.Server.Controllers
 
 
         [HttpGet("Users")]
+        [AllowAnonymous]
         public async Task<ServiceResponse<List<UserDTO>>> GetUsers()
         {
             return new ServiceResponse<List<UserDTO>>()
@@ -62,6 +63,7 @@ namespace MealOrdering.Server.Controllers
         }
 
         [HttpGet("UserById/{Id}")]
+        [AllowAnonymous]
         public async Task<ServiceResponse<UserDTO>> GetUserById(Guid Id)
         {
             return new ServiceResponse<UserDTO>()

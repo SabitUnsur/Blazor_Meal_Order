@@ -676,3 +676,13 @@ C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\bin\Debug\net5.0\ww
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Logout.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\Pages\Logout.razor.g.cs
 C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\build-gz\+8PJhhS9.gz
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\Buttons\CancelButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\Buttons\DeleteButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\Buttons\RefreshButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\CustomComponents\Buttons\SaveButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Users\InsertOrEditUser.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\CancelButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\DeleteButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\RefreshButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\CustomComponents\Buttons\SaveButtonComponent.razor.g.cs
+C:\Users\sabit\source\repos\MealOrdering\MealOrdering\Client\obj\Debug\net5.0\Razor\Pages\Users\InsertOrEditUser.razor.g.cs

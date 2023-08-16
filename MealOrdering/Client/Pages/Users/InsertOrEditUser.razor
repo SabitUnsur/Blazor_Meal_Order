@@ -1,0 +1,131 @@
+﻿@page "/users/add"
+@page "/users/edit/{UserId:guid}"
+@using MealOrdering.Shared.CustomExceptions;
+
+<EditForm Model="@userDTO" OnValidSubmit="EditOrInsert">
+ <DataAnnotationsValidator/>
+
+ <div class="form-row">
+
+     <div class="form-group col-md-6">
+         <label>First Name</label>
+         <InputText @bind-Value="@userDTO.FirstName" class="form-control"/>
+         <ValidationMessage For="@(()=> userDTO.FirstName)"/>
+     </div>
+
+      <div class="form-group col-md-6">
+         <label>Last Name</label>
+         <InputText @bind-Value="@userDTO.LastName" class="form-control"/>
+         <ValidationMessage For="@(()=> userDTO.LastName)"/>
+     </div>
+
+ </div>
+
+ 
+ <div class="form-row">
+
+     <div class="form-group col-md-6">
+         <label>E-mail Adress</label>
+         <InputText @bind-Value="@userDTO.EMailAddress" class="form-control"/>
+         <ValidationMessage For="@(()=> userDTO.EMailAddress)"/>
+     </div>
+
+      <div class="form-group col-md-6">
+         <label>Password</label>
+         <InputText @bind-Value="@userDTO.Password" class="form-control" type="password"/>
+         <ValidationMessage For="@(()=> userDTO.Password)"/>
+     </div>
+
+ </div>
+
+  
+ <div class="form-row">
+
+     <div class="form-group col-md-6">
+         <InputCheckbox @bind-Value="@userDTO.IsActive" class="form-check-input"  id="chUserStatus"/>
+        <label for="chUserStatus" class="form-check-label"> User Status </label>
+        @*labela tıklandığında da checkbox işaretlensin diye*@
+     </div>
+
+ </div>
+
+<div class="form-group">
+
+    <SaveButtonComponent Caption="Save" />
+
+        <CancelButtonComponent OnClick="goBackUserList" />
+
+</div>
+
+</EditForm>
+
+
+
+<h3>@pageTitle</h3>
+
+@code {
+
+    [Parameter]
+    public Guid UserId { get; set; }
+
+    [Inject]
+    HttpClient httpClient { get; set; }
+
+    [Inject]
+    ModalManager ModalManager { get; set; }
+
+
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+
+
+    private UserDTO userDTO = new();
+    private string pageTitle = "Create User";
+
+
+    void goBackUserList()
+    {
+        NavigationManager.NavigateTo("/userlist");
+    }
+
+
+    //Edit icin Idyle gelen kullanıcının bilgileri cekme
+    protected async override Task OnInitializedAsync()
+    {
+
+        if (UserId != null || UserId != Guid.Empty)
+        {
+            try
+            {
+                userDTO = await httpClient.GetServiceResponseAsync<UserDTO>("api/user/UserById/" + UserId , true);
+            }
+            catch (ApiException ex) { await ModalManager.ShowMessageAsync("API Exception", ex.Message); }
+
+        }
+    }
+
+    async Task EditOrInsert()
+    {
+        try
+        {
+            string url = "api/users/create";
+
+            //Update
+            if (UserId != null || UserId != Guid.Empty)
+            {
+                url = "api/users/update";
+                pageTitle = "Edit User";
+            }
+
+            userDTO = await httpClient.PostGetServiceResponseAsync<UserDTO, UserDTO>(url, userDTO, true);
+        }
+
+        catch (ApiException ex) { await ModalManager.ShowMessageAsync("API Exception", ex.Message); }
+
+        catch (Exception ex) { await ModalManager.ShowMessageAsync("Exception", ex.Message); }
+
+
+    }
+}
+
+

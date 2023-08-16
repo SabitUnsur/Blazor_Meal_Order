@@ -56,7 +56,6 @@
         try
         {
 
-
             if (httpRequestResponse.IsSuccessStatusCode)
             {
                 var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();

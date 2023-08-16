@@ -20,6 +20,7 @@ namespace MealOrdering.Client.Utils
         }
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
+          
             string apiToken = await localStorageService.GetItemAsStringAsync("token");
 
             if (string.IsNullOrEmpty(apiToken))

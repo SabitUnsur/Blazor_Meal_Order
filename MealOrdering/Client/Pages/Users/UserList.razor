@@ -2,6 +2,19 @@
 
 @inherits UserListProcess;
 
+
+<div class="btn-group">
+
+    <div class="container">
+
+        <AddNewButtonComponent OnClick="GoCreateUserPage" />
+
+    </div>
+
+</div>
+
+
+
 @if(userList != null){
 
     <table class="table table-hover table-sm">
@@ -12,6 +25,7 @@
                 <th scope="col">E-Mail Adress</th>
                 <th scope="col">Create Date</th>
                 <th scope="col">Status</th>
+                <th scope="col">#</th>
             </tr>
         </thead>
 
@@ -19,17 +33,21 @@
 
             @foreach (var user in userList)
             {
+               String spanClass = "badge badge-pill badge-" + (user.IsActive ? "success" : "danger");
+
                 <tr>
                     <td>@user.Id</td>
                     <td>@user.FullName</td>
                     <td>@user.EMailAddress</td>
                     <td>@user.CreateDate</td>
-                    <td>@user.IsActive</td>
+                    @*<td>@user.IsActive</td>*@
+                    <td> <span class="@spanClass"> @(user.IsActive ? "Active" : "Passive")</span></td>
+                   <td> <CustomEditButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="(()=>GoEditUserPage(user.Id))"/> </td>
+                    
                 </tr>
-                
             }
 
-
+            
         </tbody>
 
 

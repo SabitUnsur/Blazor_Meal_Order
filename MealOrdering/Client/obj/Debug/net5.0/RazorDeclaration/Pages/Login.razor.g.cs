@@ -196,7 +196,6 @@ using Microsoft.AspNetCore.Components.Authorization;
         try
         {
 
-
             if (httpRequestResponse.IsSuccessStatusCode)
             {
                 var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
