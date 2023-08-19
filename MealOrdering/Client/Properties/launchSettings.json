@@ -3,8 +3,13 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
+<<<<<<< HEAD
       "applicationUrl": "http://localhost:10345",
       "sslPort": 44324
+=======
+      "applicationUrl": "http://localhost:35081",
+      "sslPort": 44334
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     }
   },
   "profiles": {
@@ -18,6 +23,10 @@
     },
     "MealOrdering": {
       "commandName": "Project",
+<<<<<<< HEAD
+=======
+      "dotnetRunMessages": "true",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
       "launchBrowser": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",

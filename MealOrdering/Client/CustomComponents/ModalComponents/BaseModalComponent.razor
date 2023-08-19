@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 
 @code {
 
@@ -27,11 +28,42 @@
     protected async Task ConfirmClicked()
     {
         await ModalInstance.Close(ModalResult.Ok<String>(""));
+=======
+@code {
+
+    [Parameter]
+    public string Message { get; set; }
+
+    [Parameter]
+    public string OkText { get; set; }
+
+    [Parameter]
+    public string CancelText { get; set; }
+
+    [Parameter]
+    public string YesText { get; set; }
+
+    [Parameter]
+    public string NoText { get; set; }
+
+
+    [CascadingParameter]
+    public BlazoredModalInstance BlazoredModalInstance { get; set; }
+
+    protected async Task ConfirmClicked()
+    {
+        await BlazoredModalInstance.Close(ModalResult.Ok<String>(""));
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     }
 
     protected async Task CancelClicked()
     {
+<<<<<<< HEAD
         await ModalInstance.Close(ModalResult.Cancel());
     }
 
+=======
+        await BlazoredModalInstance.Close(ModalResult.Cancel());
+    }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 }

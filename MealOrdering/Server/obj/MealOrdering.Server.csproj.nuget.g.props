@@ -13,11 +13,19 @@
     <SourceRoot Include="C:\Users\sabit\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
     <Import Project="$(NuGetPackageRoot)blazored.typeahead\4.4.1\buildTransitive\Blazored.Typeahead.props" Condition="Exists('$(NuGetPackageRoot)blazored.typeahead\4.4.1\buildTransitive\Blazored.Typeahead.props')" />
+=======
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.1\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.1\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props')" />
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     <Import Project="$(NuGetPackageRoot)blazored.modal\5.1.0\buildTransitive\Blazored.Modal.props" Condition="Exists('$(NuGetPackageRoot)blazored.modal\5.1.0\buildTransitive\Blazored.Modal.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\sabit\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
+<<<<<<< HEAD
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\sabit\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\3.2.1</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+=======
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\sabit\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\5.0.17</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
   </PropertyGroup>
 </Project>

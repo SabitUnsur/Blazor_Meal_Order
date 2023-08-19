@@ -1,17 +1,31 @@
 ﻿@page "/buttontest"
 @page "/buttons"
+<<<<<<< HEAD
+=======
+@using MealOrdering.Client.Utils;
+@*routing*@
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 
 <h3>@title</h3>
 
 <div class="form-group">
 
+<<<<<<< HEAD
 
     <div class="container">
         <div class="btn-toolbar">
 
 
             <CustomEditButtonComponent Caption="ShowMessage" OnClick="changeTitle" />
+=======
+    <div class="container">
+
+        <div class="btn-toolbar">
+
+            <CustomEditButtonComponent Caption="ShowMessage" OnClick="@changeTitle" />
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
             <CustomEditButtonComponent Caption="Edit Caption" OnClick="@showConfirmation" Color="danger" Icon="pencil" IsSmall="false" />
             @*Burada gösterilen butonlara basıldığında acılacak popupların islemleri yapildi*@
@@ -19,6 +33,7 @@
             <AddNewButtonComponent />
 
 
+<<<<<<< HEAD
 
 
         </div>
@@ -31,6 +46,20 @@
 
     [CascadingParameter]
     IModalService Modal { get; set; }
+=======
+        </div>
+
+    </div>
+
+</div>
+
+
+
+@code {
+
+    [CascadingParameter]
+    public IModalService Modal { get; set; }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
     [Inject]
     ModalManager ModalManager { get; set; }
@@ -40,6 +69,7 @@
 
     private async Task changeTitle()
     {
+<<<<<<< HEAD
         await ModalManager.ShowMessageAsync("Show Message Title", "Record deleted", 3000);
     }
 
@@ -49,4 +79,22 @@
 
         if (res) title = "Yes just clicked"; else title = "No just clicked";
     }
+=======
+
+        await ModalManager.ShowMessageAsync("Show Message", "Kayıt Silindi",3000);
+    }
+
+    private async Task showConfirmation()
+    {
+
+        var res=await ModalManager.ConfirmationAsync("Confirmations", "Are you sure that it will be deleted?");
+
+        if (res) title = "Yes just clicked"; else title = "No just clicked";
+
+    }
+
+
+
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 }

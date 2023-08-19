@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Client\\MealOrdering.Client.csproj": {}
   },
   "projects": {
@@ -12,24 +13,49 @@
         "projectPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Client\\MealOrdering.Client.csproj",
         "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Client\\obj\\",
+=======
+    "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\MealOrdering.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\MealOrdering.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\MealOrdering.Client.csproj",
+        "projectName": "MealOrdering.Client",
+        "projectPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\MealOrdering.Client.csproj",
+        "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Client\\obj\\",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+<<<<<<< HEAD
           "netstandard2.1"
+=======
+          "net5.0"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+<<<<<<< HEAD
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
               "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\MealOrdering.Shared.csproj": {
                 "projectPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\MealOrdering.Shared.csproj"
+=======
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj": {
+                "projectPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
               }
             }
           }
@@ -41,8 +67,13 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+=======
+        "net5.0": {
+          "targetAlias": "net5.0",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
           "dependencies": {
             "Blazored.LocalStorage": {
               "target": "Package",
@@ -52,26 +83,34 @@
               "target": "Package",
               "version": "[5.1.0, )"
             },
+<<<<<<< HEAD
             "Blazored.Typeahead": {
               "target": "Package",
               "version": "[4.4.1, )"
             },
+=======
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             "Microsoft.AspNetCore.Components.Authorization": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
+<<<<<<< HEAD
               "version": "[3.2.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.Build": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.2.1, )"
+=======
+              "version": "[5.0.17, )"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
+<<<<<<< HEAD
               "version": "[3.2.1, )"
             },
             "System.Net.Http.Json": {
@@ -137,6 +176,12 @@
           "dependencies": {
             "System.ComponentModel.Annotations": {
               "target": "Package",
+=======
+              "version": "[5.0.17, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
               "version": "[5.0.0, )"
             }
           },
@@ -151,8 +196,79 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
           "frameworkReferences": {
             "NETStandard.Library": {
+=======
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
+        "projectName": "MealOrdering.Shared",
+        "projectPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
+        "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
               "privateAssets": "all"
             }
           },

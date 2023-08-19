@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+<<<<<<< HEAD
 using AutoMapper.QueryableExtensions;
 using MealOrdering.Server.Data.Context;
 using MealOrdering.Server.Services.Infrastruce;
@@ -8,6 +9,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+=======
+using MealOrdering.Server.Data.Context;
+using MealOrdering.Server.Services.Infrastructure;
+using MealOrdering.Shared.DTO;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System;
+using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 namespace MealOrdering.Server.Services.Services
 {

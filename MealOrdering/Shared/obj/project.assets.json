@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     ".NETStandard,Version=v2.1": {
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
@@ -113,6 +114,13 @@
     ".NETStandard,Version=v2.1": [
       "System.ComponentModel.Annotations >= 5.0.0"
     ]
+=======
+    "net5.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net5.0": []
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
   },
   "packageFolders": {
     "C:\\Users\\sabit\\.nuget\\packages\\": {}
@@ -120,26 +128,43 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
       "projectName": "MealOrdering.Shared",
       "projectPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
       "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
+      "projectName": "MealOrdering.Shared",
+      "projectPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
+      "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering\\Shared\\obj\\",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
+<<<<<<< HEAD
         "netstandard2.1"
+=======
+        "net5.0"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+<<<<<<< HEAD
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+=======
+        "net5.0": {
+          "targetAlias": "net5.0",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
           "projectReferences": {}
         }
       },
@@ -150,6 +175,7 @@
       }
     },
     "frameworks": {
+<<<<<<< HEAD
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
         "dependencies": {
@@ -158,6 +184,10 @@
             "version": "[5.0.0, )"
           }
         },
+=======
+      "net5.0": {
+        "targetAlias": "net5.0",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         "imports": [
           "net461",
           "net462",
@@ -170,7 +200,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+<<<<<<< HEAD
           "NETStandard.Library": {
+=======
+          "Microsoft.NETCore.App": {
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             "privateAssets": "all"
           }
         },

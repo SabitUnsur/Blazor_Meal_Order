@@ -1,10 +1,16 @@
 ﻿using MealOrdering.Shared.CustomExceptions;
 using MealOrdering.Shared.ResponseModels;
 using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+=======
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Net.Mail;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 using System.Threading.Tasks;
 
 namespace MealOrdering.Client.Utils
@@ -48,3 +54,7 @@ namespace MealOrdering.Client.Utils
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62

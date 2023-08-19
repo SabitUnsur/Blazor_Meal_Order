@@ -6,19 +6,29 @@
     ILocalStorageService localStorageService { get; set; }
 
     [Inject]
+<<<<<<< HEAD
     AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+=======
+    AuthenticationStateProvider authenticationStateProvider { get; set; }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
     [Inject]
     HttpClient Client { get; set; }
 
 
     [Inject]
+<<<<<<< HEAD
     NavigationManager NavManeger { get; set; }
+=======
+    NavigationManager NavigationManager { get; set; }
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
     protected async override Task OnInitializedAsync()
     {
         await localStorageService.RemoveItemAsync("token");
         await localStorageService.RemoveItemAsync("email");
+<<<<<<< HEAD
         await localStorageService.RemoveItemAsync("UserId");
         
         (AuthenticationStateProvider as AuthStateProvider).NotifyUserLogout();
@@ -29,4 +39,14 @@
     }
 
 
+=======
+
+        (authenticationStateProvider as AuthStateProvider).NotifyUserLogout();
+        Client.DefaultRequestHeaders.Authorization = null;
+
+        NavigationManager.NavigateTo("/login");
+
+    }
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 }

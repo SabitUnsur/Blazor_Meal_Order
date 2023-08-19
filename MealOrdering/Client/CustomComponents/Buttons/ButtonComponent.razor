@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 ﻿
 @inherits BaseButtonComponent
 
 
 <button class="btn@(IsSmall ? " btn-sm":"") btn@(IsOutline ? "-outline":"")-@Color"
+=======
+﻿@inherits BaseButtonComponent
+
+<button class="btn@(IsSmall ? " btn-sm" :"") btn@(IsOutline ? "-outline":"")-@Color"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         type="submit"
         disabled="@IsBusy"
         onclick="@OnClick"
         title="@ToolTipStr">
+<<<<<<< HEAD
     <span class="fa fa-@Icon fa-fw"></span>
 
     @if (IsBusy)
@@ -16,3 +23,20 @@
 
     @Caption
 </button>
+=======
+
+    <i class="fa fa-@Icon" aria-hidden="true"></i>
+
+    @if (IsBusy)
+    {
+        <span class="spinner-border-sm mr-1"></span>
+    }
+
+
+    @Caption
+
+
+</button>
+
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62

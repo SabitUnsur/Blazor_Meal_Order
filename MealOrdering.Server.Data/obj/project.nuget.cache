@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "IDwLm2nn+OPpWX1nD8RUzoLlzPZFWMKdtQxQD0/0xmqyt6v1NFM5K20ZXi1q0ky11h07RtzpbF205Wc8oBwRaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj",
+=======
+  "dgSpecHash": "Z3lz708bmKvh9JhLVkHeMJEHDnGoDXOgYe8luenvDYC+eooWFMYIRcolUyNspjbQidUijEU/vfRRIR698phtOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
   "expectedPackageFiles": [
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -29,10 +35,14 @@
     "C:\\Users\\sabit\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\sabit\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+=======
+    "C:\\Users\\sabit\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
   ],
   "logs": []
 }

@@ -1,18 +1,28 @@
 ﻿@inherits LayoutComponentBase
 
+<<<<<<< HEAD
+=======
+
+<div class="page">
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <div class="main">
         <div class="top-row px-4">
+<<<<<<< HEAD
             <a href="http://blazor.net" target="_blank" class="ml-md-auto">@logingStr</a>
+=======
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">@loginStr</a>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         </div>
 
         <div class="content px-4">
             @Body
         </div>
     </div>
+<<<<<<< HEAD
 
 @code
 {
@@ -43,4 +53,36 @@
             NavigationManager.NavigateTo("/login");
         }
     }
+=======
+</div>
+
+@code{
+
+    [CascadingParameter]
+    public Task<AuthenticationState> authenticationState { get; set; }
+
+    [Inject]
+    ILocalStorageService localStorageService { get; set; }
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+    private string loginStr = "";
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            loginStr = await localStorageService.GetItemAsStringAsync("email");
+        }
+
+        else
+        {
+            navigationManager.NavigateTo("/login");
+        }
+    }
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 }

@@ -1,9 +1,15 @@
 ﻿@page "/login"
+<<<<<<< HEAD
 @layout MealOrdering.Client.Shared.EmptyLayout
 
 
 
 
+=======
+
+@layout MealOrdering.Client.Shared.EmptyLayout
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 <div class="container-fluid h-100">
     <div class="row justify-content-center align-items-center h-100">
 
@@ -32,11 +38,18 @@
 </div>
 
 
+<<<<<<< HEAD
 
 
 
 @code {
 
+=======
+@code {
+
+    private UserLoginRequestDTO userLoginRequest = new();
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     [Inject]
     HttpClient Client { get; set; }
 
@@ -44,19 +57,28 @@
     ModalManager ModalManager { get; set; }
 
     [Inject]
+<<<<<<< HEAD
     NavigationManager NavManeger { get; set; }
+=======
+    NavigationManager NavigationManager { get; set; }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
     [Inject]
     ILocalStorageService localStorageService { get; set; }
 
     [Inject]
+<<<<<<< HEAD
     AuthenticationStateProvider AuthenticationStateProvider { get; set; }
 
     private UserLoginRequestDTO userLoginRequest = new UserLoginRequestDTO();
+=======
+    AuthenticationStateProvider authenticationStateProvider { get; set; }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 
     private async Task loginProcess()
     {
+<<<<<<< HEAD
         var httpReqRes = await Client.PostAsJsonAsync("api/User/Login", userLoginRequest);
 
         if (httpReqRes.IsSuccessStatusCode)
@@ -92,6 +114,38 @@
             }
         }
 
+=======
+        var httpRequestResponse = await Client.PostAsJsonAsync("api/User/Login", userLoginRequest);
+        try
+        {
+
+            if (httpRequestResponse.IsSuccessStatusCode)
+            {
+                var response = await httpRequestResponse.Content.ReadFromJsonAsync<ServiceResponse<UserLoginResponseDTO>>();
+
+                if (response.Success)
+                {
+                    await localStorageService.SetItemAsync("token", response.Value.ApiToken);
+                    await localStorageService.SetItemAsync("email", response.Value.User.EMailAddress);
+
+                    //Bu bilgileri local storagede tuttuk ve authstateprovider sınıfında bunları okuyacağız 
+
+                    (authenticationStateProvider as AuthStateProvider).NotifyUserLogin(response.Value.User.EMailAddress);
+
+                    Client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue
+                                                                                    ("Bearer", response.Value.ApiToken);
+
+                    NavigationManager.NavigateTo("/");
+                }
+
+                else await ModalManager.ShowMessageAsync("Login Error", response.Message);
+            }
+        }
+        catch (Exception ex)
+        {
+            await ModalManager.ShowMessageAsync("Login Error", ex.Message);
+        }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     }
 
 }

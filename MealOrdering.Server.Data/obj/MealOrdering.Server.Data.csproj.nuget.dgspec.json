@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj": {}
   },
   "projects": {
@@ -12,21 +13,43 @@
         "projectPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj",
         "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering.Server.Data\\obj\\",
+=======
+    "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj",
+        "projectName": "MealOrdering.Server.Data",
+        "projectPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\MealOrdering.Server.Data.csproj",
+        "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sabit\\source\\repos\\MealOrdering\\MealOrdering.Server.Data\\obj\\",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sabit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+<<<<<<< HEAD
           "netcoreapp3.1"
+=======
+          "net5.0"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+<<<<<<< HEAD
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
+=======
+          "net5.0": {
+            "targetAlias": "net5.0",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             "projectReferences": {}
           }
         },
@@ -37,8 +60,13 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+=======
+        "net5.0": {
+          "targetAlias": "net5.0",
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -76,6 +104,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
@@ -90,6 +119,8 @@
               "version": "[3.1.0, 3.1.0]"
             }
           ],
+=======
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Text;
 
 namespace MealOrdering.Server.Data.Context
@@ -16,6 +17,21 @@ namespace MealOrdering.Server.Data.Context
 
 
 
+=======
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MealOrdering.Server.Data.Context
+{
+    public class MealOrderingDbContext:DbContext
+    {
+        public MealOrderingDbContext(DbContextOptions<MealOrderingDbContext> dbContextOptions) : base(dbContextOptions)
+        {
+            
+        }
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<OrderItems> OrderItems { get; set; }
@@ -25,7 +41,11 @@ namespace MealOrdering.Server.Data.Context
         {
             modelBuilder.HasDefaultSchema("public");
 
+<<<<<<< HEAD
             modelBuilder.Entity<Users>(entity => 
+=======
+            modelBuilder.Entity<Users>(entity =>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             {
                 entity.ToTable("user", "public");
 
@@ -120,6 +140,7 @@ namespace MealOrdering.Server.Data.Context
 
             });
 
+<<<<<<< HEAD
 
 
 
@@ -127,5 +148,10 @@ namespace MealOrdering.Server.Data.Context
         }
 
 
+=======
+            base.OnModelCreating(modelBuilder);
+        }
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     }
 }

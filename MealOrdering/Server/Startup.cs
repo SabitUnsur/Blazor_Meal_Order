@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Blazored.LocalStorage;
 using Blazored.Modal;
 using MealOrdering.Server.Data.Context;
@@ -15,6 +16,26 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+=======
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.Linq;
+using Blazored.Modal;
+using MealOrdering.Server.Services.Extensions;
+using MealOrdering.Server.Services.Infrastructure;
+using MealOrdering.Server.Services.Services;
+using MealOrdering.Server.Data.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Blazored.LocalStorage;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 namespace MealOrdering.Server
 {
@@ -31,6 +52,7 @@ namespace MealOrdering.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
 
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -50,16 +72,29 @@ namespace MealOrdering.Server
             
 
             services.AddDbContext<MealOrderingDbContext>(config => 
+=======
+            services.AddControllersWithViews();
+            services.AddBlazoredModal();
+            services.AddRazorPages();
+            services.ConfigureMapping();
+            services.AddScoped<IUserService, UserService>();
+            services.AddDbContext<MealOrderingDbContext>(config =>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             {
                 config.UseNpgsql("User ID=postgres;password=123;Host=localhost;Port=5432;Database=MealOrdering;SearchPath=public");
                 config.EnableSensitiveDataLogging();
             });
 
+<<<<<<< HEAD
             services.AddAuthentication(opt => 
+=======
+            services.AddAuthentication(opt =>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
+<<<<<<< HEAD
             .AddJwtBearer(options => 
             {
                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
@@ -74,6 +109,21 @@ namespace MealOrdering.Server
                 };
             });
 
+=======
+                .AddJwtBearer(opt =>
+                {
+                    opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = Configuration["JwtIssuer"],
+                        ValidAudience = Configuration["JwtAudience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JwtSecurityKey"]))
+                    };
+                });
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
             services.AddBlazoredLocalStorage();
         }
@@ -93,16 +143,24 @@ namespace MealOrdering.Server
                 app.UseHsts();
             }
 
+<<<<<<< HEAD
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
+=======
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
 
             app.UseRouting();
 
+<<<<<<< HEAD
             app.UseAuthentication();
             app.UseAuthorization();
+=======
+            app.UseAuthorization();
+            app.UseAuthentication();
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
             app.UseEndpoints(endpoints =>
             {
@@ -112,4 +170,8 @@ namespace MealOrdering.Server
             });
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62

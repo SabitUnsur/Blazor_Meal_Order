@@ -2,12 +2,17 @@
 
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 
+<<<<<<< HEAD
 <h1>Hello, world! Counter is @counter</h1>
+=======
+<h1>Hello, world! | Counter is @counter</h1>
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
+<<<<<<< HEAD
 <p>
     Selected Guid is @supplierGuid.ToString()
 </p>
@@ -27,5 +32,13 @@ Welcome to your new app.
     protected async override Task OnInitializedAsync()
     {
         counter = await localStorage.GetItemAsync<int>("counter");
+=======
+@code{
+    private int counter = 0;
+
+    protected async override Task OnInitializedAsync()
+    {
+       counter = await localStorage.GetItemAsync<int>("counter");
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     }
 }

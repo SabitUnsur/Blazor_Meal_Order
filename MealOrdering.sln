@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -10,6 +11,18 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Shared", "MealOrdering\Shared\MealOrdering.Shared.csproj", "{F7D15C23-155A-42E6-A9A1-04A1FB46DBF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Server.Data", "MealOrdering.Server.Data\MealOrdering.Server.Data.csproj", "{8B478C82-72FA-407B-8879-366D62A7027E}"
+=======
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Server", "MealOrdering\Server\MealOrdering.Server.csproj", "{670224A7-677F-4FBD-9D0A-D2CE43C31966}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Client", "MealOrdering\Client\MealOrdering.Client.csproj", "{8A7F0895-CAE6-446F-81BB-562E7C234C54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Shared", "MealOrdering\Shared\MealOrdering.Shared.csproj", "{17C2D1CF-A10C-4E24-ADE5-7F5C942EF45E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MealOrdering.Server.Data", "MealOrdering.Server.Data\MealOrdering.Server.Data.csproj", "{476FE0D7-4A1C-47F1-A8DB-B74E6C29074D}"
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +30,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{F3F5C510-94EB-4FF4-B7C7-4E0009C5ED23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3F5C510-94EB-4FF4-B7C7-4E0009C5ED23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3F5C510-94EB-4FF4-B7C7-4E0009C5ED23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,11 +47,33 @@ Global
 		{8B478C82-72FA-407B-8879-366D62A7027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B478C82-72FA-407B-8879-366D62A7027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B478C82-72FA-407B-8879-366D62A7027E}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{670224A7-677F-4FBD-9D0A-D2CE43C31966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670224A7-677F-4FBD-9D0A-D2CE43C31966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670224A7-677F-4FBD-9D0A-D2CE43C31966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670224A7-677F-4FBD-9D0A-D2CE43C31966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7F0895-CAE6-446F-81BB-562E7C234C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7F0895-CAE6-446F-81BB-562E7C234C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7F0895-CAE6-446F-81BB-562E7C234C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7F0895-CAE6-446F-81BB-562E7C234C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C2D1CF-A10C-4E24-ADE5-7F5C942EF45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C2D1CF-A10C-4E24-ADE5-7F5C942EF45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C2D1CF-A10C-4E24-ADE5-7F5C942EF45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C2D1CF-A10C-4E24-ADE5-7F5C942EF45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476FE0D7-4A1C-47F1-A8DB-B74E6C29074D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476FE0D7-4A1C-47F1-A8DB-B74E6C29074D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476FE0D7-4A1C-47F1-A8DB-B74E6C29074D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476FE0D7-4A1C-47F1-A8DB-B74E6C29074D}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {60CAAF4C-2672-4126-9231-8F804A520CC0}
+=======
+		SolutionGuid = {23D3469C-4C7B-40DC-8099-E014EEFF4D05}
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 	EndGlobalSection
 EndGlobal

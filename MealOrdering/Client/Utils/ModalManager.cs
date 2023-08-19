@@ -1,9 +1,13 @@
 ﻿using Blazored.Modal;
 using Blazored.Modal.Services;
 using MealOrdering.Client.CustomComponents.ModalComponents;
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 using System.Linq;
+=======
+using System.Reflection.Metadata;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 using System.Threading.Tasks;
 
 namespace MealOrdering.Client.Utils
@@ -16,6 +20,7 @@ namespace MealOrdering.Client.Utils
         {
             modalService = ModalService;
         }
+<<<<<<< HEAD
 
 
 
@@ -30,10 +35,24 @@ namespace MealOrdering.Client.Utils
             if (Duration > 0)
             {
                 await Task.Delay(Duration);
+=======
+        public async Task ShowMessageAsync(string Title,string Message, int duration = 0)
+        {
+            ModalParameters modalParameters = new();
+            modalParameters.Add("Message", Message);
+
+            var modalRef= modalService.Show<ShowMessagePopupComponent>(Title,modalParameters);
+            //ShowMessagePopupComponent içerisinde giden parametreler setlendi
+
+            if (duration > 0)
+            {
+                await Task.Delay(duration);
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
                 modalRef.Close();
             }
         }
 
+<<<<<<< HEAD
         public async Task<bool> ConfirmationAsync(String Title, String Message)
         {
             ModalParameters mParams = new ModalParameters();
@@ -46,6 +65,19 @@ namespace MealOrdering.Client.Utils
             return !modalResult.Cancelled;
         }
 
+=======
+        public async Task<bool> ConfirmationAsync(string Title, string Message)
+        {
+            ModalParameters modalParameters = new();
+            modalParameters.Add("Message", Message);
+
+            var modalRef = modalService.Show<ConfirmationPopupComponent>(Title, modalParameters);
+            var modalResult = await modalRef.Result;
+
+            return !modalResult.Cancelled;
+
+        }
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
     }
 }

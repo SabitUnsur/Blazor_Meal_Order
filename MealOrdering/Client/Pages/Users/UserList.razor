@@ -1,5 +1,6 @@
 ﻿@page "/userlist"
 
+<<<<<<< HEAD
 
 @inherits UserListProcess
 
@@ -13,10 +14,30 @@
 
 @if (UserList != null)
 {
+=======
+@inherits UserListProcess;
+
+
+<div class="btn-group">
+
+    <div class="container">
+
+        <AddNewButtonComponent OnClick="GoCreateUserPage" />
+
+    </div>
+
+</div>
+
+
+
+@if(userList != null){
+
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
     <table class="table table-hover table-sm">
         <thead>
             <tr>
                 <th scope="col">Id</th>
+<<<<<<< HEAD
                 <th scope="col">Full Name</th>
                 <th scope="col">E-Mail</th>
                 <th scope="col">Created Date</th>
@@ -29,6 +50,21 @@
             @foreach (var user in UserList)
             {
                 String spanClass = "badge badge-pill badge-" + (user.IsActive ? "success" : "danger");
+=======
+                <th scope="col">Name Surname</th>
+                <th scope="col">E-Mail Adress</th>
+                <th scope="col">Create Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">#</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var user in userList)
+            {
+               String spanClass = "badge badge-pill badge-" + (user.IsActive ? "success" : "danger");
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
                 <tr>
                     <td>@user.Id</td>
@@ -37,6 +73,7 @@
                     <td>@user.CreateDate</td>
                     @*<td>@user.IsActive</td>*@
                     <td> <span class="@spanClass"> @(user.IsActive ? "Active" : "Passive")</span></td>
+<<<<<<< HEAD
                     <td>
                         <CustomEditButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="@(()=>goUpdateUserPage(user.Id))" />
                         <DeleteButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="@(()=>DeleteUser(user.Id))" />
@@ -49,3 +86,17 @@
     </table>
 }
 
+=======
+                   <td> <CustomEditButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="(()=>GoEditUserPage(user.Id))"/> </td>
+                    
+                </tr>
+            }
+
+            
+        </tbody>
+
+
+    </table>
+
+}   
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62

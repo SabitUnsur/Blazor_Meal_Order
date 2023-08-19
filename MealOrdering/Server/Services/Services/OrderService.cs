@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+<<<<<<< HEAD
 using AutoMapper.QueryableExtensions;
 using MealOrdering.Server.Data.Context;
 using MealOrdering.Server.Services.Infrastruce;
@@ -9,6 +10,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+=======
+using MealOrdering.Server.Data.Context;
+using MealOrdering.Server.Services.Infrastructure;
+using MealOrdering.Shared.DTO;
+using MealOrdering.Shared.FilterModels;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper.QueryableExtensions;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 namespace MealOrdering.Server.Services.Services
 {
@@ -16,6 +29,7 @@ namespace MealOrdering.Server.Services.Services
     {
         private readonly MealOrderingDbContext context;
         private readonly IMapper mapper;
+<<<<<<< HEAD
         private readonly IValidationService validationService;
 
         public OrderService(MealOrderingDbContext Context, IMapper Mapper, IValidationService ValidationService)
@@ -23,6 +37,15 @@ namespace MealOrdering.Server.Services.Services
             context = Context;
             mapper = Mapper;
             validationService = ValidationService;
+=======
+       // private readonly IValidationService validationService;
+
+        public OrderService(MealOrderingDbContext Context, IMapper Mapper)
+        {
+            context = Context;
+            mapper = Mapper;
+            //validationService = ValidationService;
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
         }
 
 
@@ -94,8 +117,13 @@ namespace MealOrdering.Server.Services.Services
                 throw new Exception("Order not found");
 
 
+<<<<<<< HEAD
             if (!validationService.HasPermission(dbOrder.CreatedUserId))
                 throw new Exception("You cannot change the order unless you created");
+=======
+           /* if (!validationService.HasPermission(dbOrder.CreatedUserId))
+                throw new Exception("You cannot change the order unless you created");*/
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
             mapper.Map(Order, dbOrder);
             await context.SaveChangesAsync();
@@ -116,8 +144,13 @@ namespace MealOrdering.Server.Services.Services
                 throw new Exception("Order not found");
 
 
+<<<<<<< HEAD
             if (!validationService.HasPermission(order.CreatedUserId))
                 throw new Exception("You cannot change the order unless you created");
+=======
+           /* if (!validationService.HasPermission(order.CreatedUserId))
+                throw new Exception("You cannot change the order unless you created");*/
+>>>>>>> 9e6b9473dcf2cd01f3c11c3d90412de78c5a2a62
 
 
 
