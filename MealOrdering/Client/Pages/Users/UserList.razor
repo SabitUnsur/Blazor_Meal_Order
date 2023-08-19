@@ -1,0 +1,51 @@
+﻿@page "/userlist"
+
+
+@inherits UserListProcess
+
+<div class="btn-group">
+    <AddNewButtonComponent Caption="Create User" OnClick="goCreateUserPage" />
+
+</div>
+<br />
+<br />
+
+
+@if (UserList != null)
+{
+    <table class="table table-hover table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">E-Mail</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">#</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in UserList)
+            {
+                String spanClass = "badge badge-pill badge-" + (user.IsActive ? "success" : "danger");
+
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.FullName</td>
+                    <td>@user.EMailAddress</td>
+                    <td>@user.CreateDate</td>
+                    @*<td>@user.IsActive</td>*@
+                    <td> <span class="@spanClass"> @(user.IsActive ? "Active" : "Passive")</span></td>
+                    <td>
+                        <CustomEditButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="@(()=>goUpdateUserPage(user.Id))" />
+                        <DeleteButtonComponent IsSmall="true" Caption="" IsOutline="true" OnClick="@(()=>DeleteUser(user.Id))" />
+
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+

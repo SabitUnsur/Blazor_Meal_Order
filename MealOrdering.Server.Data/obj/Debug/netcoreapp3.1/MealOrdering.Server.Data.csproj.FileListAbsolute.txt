@@ -1,0 +1,13 @@
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\bin\Debug\netcoreapp3.1\MealOrdering.Server.Data.deps.json
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\bin\Debug\netcoreapp3.1\MealOrdering.Server.Data.runtimeconfig.json
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\bin\Debug\netcoreapp3.1\MealOrdering.Server.Data.runtimeconfig.dev.json
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\bin\Debug\netcoreapp3.1\MealOrdering.Server.Data.dll
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\bin\Debug\netcoreapp3.1\MealOrdering.Server.Data.pdb
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.csproj.AssemblyReference.cache
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.AssemblyInfoInputs.cache
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.AssemblyInfo.cs
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.csproj.CoreCompileInputs.cache
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.dll
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.pdb
+C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering.Server.Data\obj\Debug\netcoreapp3.1\MealOrdering.Server.Data.genruntimeconfig.cache

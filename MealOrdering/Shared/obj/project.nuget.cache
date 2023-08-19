@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "55xmPEXSYrx8lMw5p1aRbDw+ukNpPkpD1lUA7sLIoWNaLOcKEjiJg2bDRhGAfpAiRy83qKt5UudvW7CFE9QNPg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sabit\\OneDrive\\Masaüstü\\MealOrdering-master\\MealOrdering-master\\MealOrdering\\Shared\\MealOrdering.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sabit\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

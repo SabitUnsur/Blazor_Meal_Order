@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\sabit\OneDrive\Masaüstü\MealOrdering-master\MealOrdering-master\MealOrdering\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.Modal" Path="C:\Users\sabit\.nuget\packages\blazored.modal\5.1.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazored.Typeahead" Path="C:\Users\sabit\.nuget\packages\blazored.typeahead\4.4.1\build\..\staticwebassets\" />
+</StaticWebAssets>
